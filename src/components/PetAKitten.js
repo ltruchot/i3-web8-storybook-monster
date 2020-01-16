@@ -4,6 +4,7 @@ import './PetAKitten.scss';
 
 const PetAKitten = ({ tooHard, color }) => (
   <div className="kittenConcerned">
+    <img src={`${tooHard ? 'deadkitten' : 'kitten'}.png`} alt="the kitten" />
     <span className="too-hard">
       You successfully
       {' '}
