@@ -1,9 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Jessik from './Jessik';
-import './Jessik.scss';
 import PetAKitten from './PetAKitten';
-import './PetAKitten.scss';
 import Button from './Button';
 
 export default{
