@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Toto from './components/Toto';
-import JessiK from './components/Jessik'
+import JessiK from './components/Jessik';
 
 function App() {
   return (
@@ -13,14 +13,13 @@ function App() {
       </div>
 
       <div>
-      <JessiK />
-      <JessiK isPurple />
-      <JessiK />
+        <JessiK />
+        <JessiK isPurple />
+        <JessiK />
       </div>
     </div>
- 
-  );
 
+  );
 }
 
 export default App;
