@@ -7,3 +7,5 @@ export default {
   };
 
   export const basic = () => <Jessik />;
+
+  export const withPurple = () => <Jessik isPurple />;
