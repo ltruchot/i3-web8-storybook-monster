@@ -6,4 +6,4 @@ export default {
   component: Button,
 };
 
-export const Exemple = () => <Button />;
+export const Exemple = () => <Button styleName="btn" />;
