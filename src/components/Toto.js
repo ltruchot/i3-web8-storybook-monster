@@ -19,7 +19,7 @@ Vive
 !!!
 
       </span>
-      <img src={toto} alt="toto" />
+      <img src={toto} alt="totos" />
     </h2>
   );
 };
