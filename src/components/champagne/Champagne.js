@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Champagne.scss';
 
-const clickOpenBottle = () => {};
+const clickOpenBottle = () => {
+  const image = document.getElementById('champ-img');
+  image.src = 'open-champagne.gif';
+};
 
 const Champagne = ({ openBottle }) => (
   <div className="container">
