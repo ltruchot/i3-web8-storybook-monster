@@ -24,7 +24,6 @@ const Champagne = ({ openBottle }) => (
         : <img src="champagne.jpg" alt="" />}
 
     </div>
-
   </div>
 );
 
