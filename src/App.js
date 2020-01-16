@@ -6,9 +6,17 @@ import Sab from "./components/sabrina/Sab";
 function App() {
   return (
     <div>
-      <Toto />
-      <Toto isTiti />
-      <Toto />
+      <div>
+        <Toto />
+        <Toto isTiti />
+        <Toto />
+      </div>
+
+      <div>
+        <JessiK />
+        <JessiK isPurple />
+        <JessiK />
+      </div>
     </div>
   );
 }
