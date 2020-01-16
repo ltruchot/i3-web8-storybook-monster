@@ -4,26 +4,26 @@ import './Champagne.scss';
 
 const clickOpenBottle = () => {
   const image = document.getElementById('champ-img');
-  console.log(image);
   image.src = 'open-champagne.gif';
 };
 
 const Champagne = ({ openBottle }) => (
-  <div className="champagne-wrapper">
+  <div className="container">
     <h1>Champagne</h1>
+    <div className="champagne-wrapper">
+      {/* <img src={openBottle ? 'open-champagne.gif' : 'champagne.jpg'} alt="" /> */}
 
-    {/* <img src={openBottle ? 'open-champagne.gif' : 'champagne.jpg'} alt="" /> */}
+      {openBottle
+        ? (
+          <>
+            <img id="champ-img" src="champagne.jpg" alt="" />
+            {' '}
+            <button type="button" onClick={clickOpenBottle}>Open</button>
+          </>
+        )
+        : <img src="champagne.jpg" alt="" />}
 
-    {openBottle
-      ? (
-        <>
-          <img id="champ-img" src="champagne.jpg" alt="" />
-          {' '}
-          <button type="button" onClick={clickOpenBottle}>Open</button>
-        </>
-      )
-      : <img src="champagne.jpg" alt="" />}
-
+    </div>
   </div>
 );
 

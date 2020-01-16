@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Toto.scss';
+import toto from './Toto.svg';
 
-const Toto = ({ isTiti }) => (
-  <span className="toto">
-    Vive
-    {' '}
-    {isTiti ? 'titi' : 'toto' }
-    {' '}
+const Toto = ({ isTiti }) => {
+  const [visible, setVisible] = useState(true);
+  const [count, setCount] = useState(0);
+  setTimeout(() => { setCount(count + 0.5); setVisible(!visible); }, 500);
+  return (
+    <h2 className="toto">
+      <img src={toto} alt="toto" />
+      <span style={{ display: visible ? 'inline' : 'none' }}>
+Vive
+        {' '}
+        {isTiti ? 'titi' : 'toto' }
+        {' '}
+        {count}
 !!!
-  </span>
-);
+
+      </span>
+      <img src={toto} alt="totos" />
+    </h2>
+  );
+};
 
 Toto.propTypes = {
   isTiti: PropTypes.bool.isRequired,
