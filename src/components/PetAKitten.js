@@ -18,7 +18,8 @@ const PetAKitten = ({ tooHard, color }) => (
   </div>
 );
 
-Toto.propTypes = {
-  isTiti: PropTypes.bool.isRequired,
+PetAKitten.propTypes = {
+  tooHard: PropTypes.bool.isRequired,
+  color: PropTypes.string.isRequired,
 };
-export default Toto;
+export default PetAKitten;
