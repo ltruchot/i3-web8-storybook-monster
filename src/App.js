@@ -1,6 +1,7 @@
-import React from 'react';
-import './App.scss';
-import Toto from './components/Toto';
+import React from "react";
+import "./App.scss";
+import Toto from "./components/Toto";
+import Sab from "./components/sabrina/Sab";
 
 function App() {
   return (
