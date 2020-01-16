@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './PetAKitten.scss';
 
-const PetAKitten = ({ tooHard, color }) => (
-  <div className="kittenConcerned">
-    <img src={`${tooHard ? 'deadkitten' : 'kitten'}.png`} alt="the kitten" />
-    <span className="too-hard">
+const PetAKitten = ({ tooHard, color }) => {
+  const [isAngry, setIsAngry] = useState(false);
+  return (
+
+    <div className="kittenConcerned">
+      <img src={`${tooHard ? 'deadkitten' : 'kitten'}.png`} alt="the kitten" onClick={() => setIsAngry(!isAngry)} />
+      <span className="too-hard">
       You successfully
-      {' '}
-      { tooHard ? 'killed' : 'pet'}
-      {' '}
+        {' '}
+        { tooHard ? 'killed' : 'pet'}
+        {' '}
       the
-      {' '}
-      {color}
-      {' '}
+        {' '}
+        {color}
+        {' '}
       kitten.
-    </span>
-  </div>
-);
+        { isAngry ? " Now it's angry!" : ''}
+      </span>
+    </div>
+  );
+};
 
 PetAKitten.propTypes = {
   tooHard: PropTypes.bool.isRequired,
