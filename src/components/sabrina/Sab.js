@@ -9,6 +9,6 @@ const Sab = ({ isText }) => (
 );
 
 Sab.propTypes = {
-  isTiti: PropTypes.string.isRequired,
+  isText: PropTypes.string.isRequired,
 };
 export default Sab;
